@@ -542,7 +542,7 @@ body {
     margin-left: 100px;
 }
 
-.subs__for input {
+.subs__for input[type="email"] {
     margin-left: 92px;
     margin-top: 35px;
     border-radius: 23px 0 0 23px;
@@ -553,20 +553,6 @@ body {
     padding-left: 28px;
     padding-right: 18px;
     color: #222224;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    outline: none;
-}
-
-.subs__for button {
-    margin-top: 35px;
-    border-radius: 0 23px 23px 0;
-    background-color: #f16d7f;
-    width: 104px;
-    height: 46px;
-    border: none;
-    color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
@@ -687,7 +673,7 @@ body {
     box-shadow: 0 0 5px #f16d7f;
 }
 
-.subs__for button:active {
+.subs__for input[type="submit"]:active {
     background-color: #ba4152;
 }
 
@@ -1096,4 +1082,20 @@ text-transform: uppercase;
 .cart__buttons input:hover{
     color: #fff;
     background-color: #f16d7f;
+}
+
+.subs__input input[type="submit"] {
+   margin-top: 35px;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    width: 104px;
+    height: 46px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    outline: none;
+    margin-left: 0;
+    text-align: center;
 }
