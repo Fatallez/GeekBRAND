@@ -52,13 +52,28 @@ input[type=submit]:hover {
   background-color: #f16d7f;
 }
 
-body {
+html, body {
+  height: 100%;
   font-family: "Lato", sans-serif;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex-grow: 1;
+}
+
+footer {
+  height: 946px;
 }
 
 .header {
@@ -343,6 +358,17 @@ body {
 .fc__item {
   text-decoration: none;
   position: relative;
+  transition: all 0.3s;
+}
+.fc__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.fc__item:hover .item__img img {
+  opacity: 0.3;
+}
+.fc__item:hover .item__add {
+  visibility: visible;
 }
 
 .featured__content h3 {
@@ -364,9 +390,12 @@ body {
   text-transform: uppercase;
 }
 
-.featured__content button {
+.featured__button {
+  display: inline-block;
+  text-align: center;
   width: 212px;
   height: 48px;
+  line-height: 48px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -378,28 +407,16 @@ body {
   border: none;
   transition: all 0.3s;
 }
-.featured__content button:hover {
+.featured__button:hover {
   box-shadow: 0 0 10px rgba(241, 109, 127, 0.5);
 }
 
-.featured__content button:active {
+.featured__button:active {
   background-color: #ba4152;
 }
 
 .fa-long-arrow-alt-right {
   margin-left: 9px;
-}
-
-.fc__item:hover {
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-}
-
-.fc__item:hover .item__img img {
-  opacity: 0.3;
-}
-
-.fc__item:hover .item__add {
-  visibility: visible;
 }
 
 .category-content img:hover {
@@ -1443,7 +1460,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .like__also_content {
   transition: all 0.3s;
 }
@@ -1464,8 +1480,8 @@ body {
   padding-left: 14px;
   margin-bottom: 21px;
 }
-
 .like__also_content:hover {
+  transform: scale(1.05);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
@@ -1534,7 +1550,7 @@ body {
   position: absolute;
   margin-top: 10px;
 }
-.flex__list_left form h5 {
+.flex__list_left form .input__name {
   position: relative;
   color: #222222;
   font-size: 12px;
@@ -1543,7 +1559,7 @@ body {
   margin-left: 20px;
   cursor: pointer;
 }
-.flex__list_right form h5 {
+.flex__list_right form .input__name {
   color: #222222;
   font-size: 12px;
   font-weight: 400;
@@ -1697,7 +1713,7 @@ body {
   margin-bottom: 13px;
   width: 56px;
 }
-.filter__size p {
+.filter__size span {
   color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
