@@ -1,0 +1,22 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": "52.00",
+    "img": "img/f1.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 2,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": "52.00",
+    "img": "img/f2.jpg",
+    "quantity": 2
+  },{
+  "id_product": 16,
+  "product_name": "MANGO PEOPLE T-SHIRT",
+  "price": "52.00",
+  "img": "img/product8.jpg",
+  "quantity": 6
+}
+]
